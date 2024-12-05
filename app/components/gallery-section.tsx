@@ -23,7 +23,13 @@ export default function GallerySection() {
 function GalleryImage({ src, alt }: { src: string; alt: string }) {
   return (
     <div className="relative h-64 overflow-hidden rounded-lg shadow-md">
-      <Image src={src} alt={alt} layout="fill" objectFit="cover" className="transition-transform duration-300 hover:scale-110" />
+      <Image 
+        src={src} 
+        alt={alt} 
+        fill 
+        style={{ objectFit: 'cover' }} 
+        className="transition-transform duration-300 hover:scale-110" 
+      />
     </div>
   )
 }
