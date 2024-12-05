@@ -1,7 +1,6 @@
 "use client";
 import { Heart, Calendar, Utensils } from 'lucide-react'
 
-
 export default function FeaturesSection() {
   return (
     <section id="features" className="py-20 bg-white">
@@ -29,7 +28,7 @@ export default function FeaturesSection() {
   )
 }
 
-function FeatureCard({ icon, title, description }) {
+function FeatureCard({ icon, title, description }: { icon: React.ReactNode; title: string; description: string }) {
   return (
     <div className="text-center">
       <div className="flex justify-center mb-4">{icon}</div>
@@ -38,4 +37,3 @@ function FeatureCard({ icon, title, description }) {
     </div>
   )
 }
-
